@@ -161,6 +161,7 @@ config SND_BCM2708_SOC_ALLO_PIANO_DAC
 	help
 	  Say Y or M if you want to add support for Allo Piano DAC.
 
+<<<<<<< HEAD
 config SND_BCM2708_SOC_ALLO_PIANO_DAC_PLUS
 	tristate "Support for Allo Piano DAC Plus"
 	depends on SND_BCM2708_SOC_I2S || SND_BCM2835_SOC_I2S
@@ -195,3 +196,13 @@ config SND_PISOUND
 	select SND_RAWMIDI
 	help
 	  Say Y or M if you want to add support for Blokas Labs pisound.
+=======
+config SND_BCM2708_SOC_SONDBOX_ADC
+	tristate "Support for sondbox wm8737 adc"
+	depends on SND_BCM2708_SOC_I2S || SND_BCM2835_SOC_I2S
+	select SND_SOC_WM8737
+	select SND_SOC_I2C_AND_SPI
+	help
+	  Say Y or M if you want to add support for sondbox-adc.
+
+>>>>>>> a8fa81c... [sound] Add snd-soc-sondbox-adc driver
